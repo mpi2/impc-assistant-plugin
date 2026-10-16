@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "impc-solr": {
+      "type": "streamable-http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/solr/"
+    },
+    "impc-publications": {
+      "type": "streamable-http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/publication/"
+    },
+    "impc-orthology": {
+      "type": "streamable-http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/orthology/"
+    },
+    "impc-allele": {
+      "type": "streamable-http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/allele/"
+    }
+  }
+}

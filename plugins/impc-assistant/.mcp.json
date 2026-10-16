@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "impc-solr": {
+      "type": "http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/solr/"
+    },
+    "impc-publications": {
+      "type": "http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/publication/"
+    },
+    "impc-orthology": {
+      "type": "http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/orthology/"
+    },
+    "impc-allele": {
+      "type": "http",
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/allele/"
+    }
+  }
+}

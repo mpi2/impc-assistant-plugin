@@ -1,0 +1,20 @@
+{
+  "name": "impc-private",
+  "interface": {
+    "displayName": "IMPC Assistant"
+  },
+  "plugins": [
+    {
+      "name": "impc-assistant",
+      "source": {
+        "source": "local",
+        "path": "./plugins/impc-assistant"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

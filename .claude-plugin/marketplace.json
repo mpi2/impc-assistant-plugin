@@ -1,0 +1,13 @@
+{
+  "name": "impc-private",
+  "owner": {
+    "name": "impc"
+  },
+  "plugins": [
+    {
+      "name": "impc-assistant",
+      "source": "./plugins/impc-assistant",
+      "description": "Explore IMPC phenotype datasets, IMPReSS parameters, and ES-cell construct coordinates."
+    }
+  ]
+}

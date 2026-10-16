@@ -1,0 +1,6 @@
+{
+  "name": "impc-assistant",
+  "version": "0.1.0",
+  "description": "Explore IMPC phenotype datasets, IMPReSS parameters, and ES-cell construct coordinates.",
+  "license": "Apache-2.0"
+}
