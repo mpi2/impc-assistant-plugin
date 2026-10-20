@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "impc-assistant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Explore IMPC phenotype datasets, IMPReSS parameters, and ES-cell construct coordinates.",
   "license": "Apache-2.0",
   "extensions": {

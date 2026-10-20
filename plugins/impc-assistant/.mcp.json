@@ -2,19 +2,19 @@
   "mcpServers": {
     "impc-solr": {
       "type": "http",
-      "url": "https://www.ebi.ac.uk/mi/impc/mcp/solr/"
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/solr/?client=claude"
     },
     "impc-publications": {
       "type": "http",
-      "url": "https://www.ebi.ac.uk/mi/impc/mcp/publication/"
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/publication/?client=claude"
     },
     "impc-orthology": {
       "type": "http",
-      "url": "https://www.ebi.ac.uk/mi/impc/mcp/orthology/"
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/orthology/?client=claude"
     },
     "impc-allele": {
       "type": "http",
-      "url": "https://www.ebi.ac.uk/mi/impc/mcp/allele/"
+      "url": "https://www.ebi.ac.uk/mi/impc/mcp/allele/?client=claude"
     }
   }
 }

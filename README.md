@@ -118,3 +118,29 @@ The code is distributed under Apache-2.0; retain LICENSE and the uv skill's NOTI
 - [Codex plugin packaging](https://developers.openai.com/plugins/build/plugins)
 - [Claude Code marketplaces](https://code.claude.com/docs/en/plugin-marketplaces)
 - [Cursor plugin format](https://cursor.com/docs/reference/plugins)
+
+## Claude Code trailing-slash connection workaround
+
+Version 0.1.1 adds `?client=claude` after the trailing slash in the Claude-specific
+`.mcp.json` URLs, for example:
+
+```text
+https://www.ebi.ac.uk/mi/impc/mcp/solr/?client=claude
+```
+
+On 2026-10-20, all four IMPC endpoints returned HTTP 200 with valid MCP initialize
+results for both the canonical slash URL and this query-string form. Removing the
+slash returned HTTP 301. This workaround keeps the slash before the query string;
+it does not change the service or add authentication. Portable `mcp.json` keeps
+the canonical URLs.
+
+Claude Code itself was unavailable in the validation environment, so successful
+reconnection there is not yet verified. After publishing this release, refresh
+the marketplace and update the installed plugin through Claude Code's plugin
+manager, then start a new session and check `/mcp`. If it still fails, capture
+the effective endpoint and connection error, removing any credentials before
+sharing. Do not edit the installed plugin cache: those edits are replaced by updates.
+
+A similar URL-normalization issue and the query-string workaround are reported
+for Claude web connectors; that report alone does not establish a Claude Code bug:
+https://github.com/anthropics/claude-ai-mcp/issues/234
